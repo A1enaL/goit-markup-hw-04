@@ -69,8 +69,11 @@ body{font-family: 'Roboto', sans-serif;
 
 .main-header {
     display: flex;
-    align-items: center;}
+    align-items: center;
+}
 
+nav {display: flex;
+    align-items: center;}
     /* logo */
     .logo {
         font-family: Raleway, sans-serif;
@@ -119,9 +122,10 @@ body{font-family: 'Roboto', sans-serif;
     background-color: var(--dark);
     text-align: center;
     padding-top: 188px;
-    padding-bottom: 188px;
-    width: 1440px;
-    flex-grow: 1;
+    padding-bottom: 188px;    
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/office.jpg);
     background-repeat: no-repeat;
@@ -386,7 +390,7 @@ color: var(--pressed-state);}
     border-top: none;
     padding: 32px 16px;}
 
-.examples-item .content:is(:hover, :focus) {
+.examples-item:is(:hover, :focus) {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
